@@ -20,3 +20,7 @@
 #three li {
     float: right;
 }
+
+body {
+    padding-top: 80px;
+}
