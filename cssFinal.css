@@ -1,0 +1,22 @@
+#logo {
+    width: 50%;
+    float: left;
+}
+
+#one{
+    width: 20%;
+}
+
+#two{
+    width:60%;
+}
+
+#three{
+    width: 20%;
+    float:right;
+    
+}
+
+#three li {
+    float: right;
+}
