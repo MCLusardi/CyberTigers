@@ -1,38 +1,38 @@
 <!DOCTYPE html>
+<!-- This is a navbar for the publically visible pages-->
 <html lang=en>
     <head>
         <meta charset="utf-8">
+        <!--Bootstrap links-->
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
         <!-- Latest compiled and minified CSS -->
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-
         <!-- jQuery library -->
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-
         <!-- Latest compiled JavaScript -->
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-        
+        <!-- My CSS file -->
         <link rel="stylesheet" href="cssFinal.css">
         
         <title>Mizzou CyberTigers</title>
         
     </head>
-    <body>
+    <body> <!-- Add class "active" to denote what page is up-->
         <nav id="navbar" class="navbar navbar-inverse navbar-fixed-top">
             <div class="container-fluid">
                 <div id="one" class="navbar-header">
                     <img id="logo" src="GeneralAssets/CyberTiger3.png" alt="CyberTigers Logo">
-                    <a class="navbar-brand" href="index.html">CyberTigers</a>
+                    <a id="home" class="navbar-brand" href="index.html">CyberTigers</a>
                 </div>
                 <ul id="two" class="nav navbar-nav">
                     
-                    <li class="active"><a href="index.html">Home</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Contact</a></li>
+                    <li id="CalendarPg"><a href="CalendarHtml.html">Calendar of Events</a></li>
+                    <li id="OfficersPg"><a href="OfficersHtml.html">Officers</a></li>
+                    <li id="ContactPg"><a href="ContactHtml.html">Contact</a></li>
                 </ul>
                 <ul id="three" class="nav navbar-nav navbar-right">
-                    <li><a href="createUserFormFinal.html"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
-                    <li><a href="loginFormFinal.html"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+                    <li id="SignUpPg"><a href="createUserFormFinal.html"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+                    <li id="LoginPg"><a href="loginFormFinal.html"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
                 </ul>
             </div>
         </nav>

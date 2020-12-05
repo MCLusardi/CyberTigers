@@ -8,6 +8,24 @@
                 crossorigin="anonymous">
         </script>
         <script src="jsFinal.js"></script>
+        <script>
+            $(function(){	
+                $("input[type=submit]").button();
+                $("#password, #confirmPass").keyup(function(){
+                    var password = $("#password").val();
+                    var confirmPassword = $("#confirmPass").val();
+                
+                    if(password.localeCompare(confirmPassword) != 0){
+ //                     $("#outputDiv").html("Password don't match!");
+                        document.getElementById("confirmPass").setCustomValidity("Passwords Don't Match!");
+                    }
+                    else {
+ //                     $("#outputDiv").html("Passwords Match");
+                        document.getElementById("confirmPass").setCustomValidity("");
+                    }
+                });
+            });
+    </script>
     </head>
     <body>
         <div id="navigation"></div>
@@ -37,9 +55,45 @@
                 <input type="password" id="confirmPass" name="confirmPass" required>
             </div>
             
-             <div> <!-- This will be a drop-down -->
+             <div>
                 <label for="major">Major:</label>
-                <input type="date" id="birthday" name="birthday" required>
+                <select id="major" name="major" required>
+                    <option selected disabled>Select One:</option>
+                    <option>Computer Science</option>
+                    <option>Information Technology</option>
+                    <option>Computer Engineering</option>
+                    <option>Electrical Engineering</option>
+                    <option>Other Engineering</option>
+                    <option>Other Major</option>
+                 </select>
+            </div>
+            
+            <div>
+                <label for="school">School:</label>
+                <select id="school" name="school" required>
+                    <option selected disabled>Select One:</option>
+                    <option>University of Missouri - Columbia</option>
+                    <option>Columbia College</option>
+                    <option>Stephen's College</option>
+                    <option>Missouri University of Science and Technology - Rolla</option>
+                    <option>High School</option>
+                    <option>Other</option>
+                    <option>None</option>
+                 </select>
+            </div>
+            
+            <div>
+                <label for="year">Year:</label>
+                <select id="year" name="year" required>
+                    <option selected disabled>Select One:</option>
+                    <option>High School</option>
+                    <option>Freshman</option>
+                    <option>Sophomore</option>
+                    <option>Junior</option>
+                    <option>Senior</option>
+                    <option>Super-Senior</option>
+                    <option>Graduated</option>
+                 </select>
             </div>
             
             <div>
@@ -48,7 +102,7 @@
             </div>
             
             
-            <div class="stack">
+            <div>
                 <input type="submit" value="Submit">
             </div>
             
