@@ -23,4 +23,45 @@
 
 body {
     padding-top: 80px;
+    background-image: url(GeneralAssets/backgroundStatic.gif);
+}
+
+/* CSS specific for OfficersHtml.html */
+.container{
+    width: 100%;
+}
+
+.card {
+    width: 80%;
+    height: 500px;
+    margin: auto;
+    margin-bottom: 20px;
+    background-color: black;
+    border: 4px inset silver;
+    color: white;
+}
+
+.card img {
+    width: 50%;
+    height: 100%;
+    float: left;
+}
+.text {
+    width: 50%;
+}
+.PTitle {
+    font-family: 'Righteous', cursive;
+    margin: 20px;
+    font-size: 30px;
+    border-bottom: 4px solid silver;
+    margin-left: auto;
+    margin-right: auto;
+}
+.Description {
+    font-family: sans-serif;
+}
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
 }
