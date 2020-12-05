@@ -65,3 +65,33 @@ body {
   clear: both;
   display: table;
 }
+
+/* CSS for ContactHtml.html */
+.title {
+    font-family: 'Righteous', cursive;
+    font-size: 30px;
+    margin: 10px;
+}
+#explainer {
+    font-family: sans-serif;
+    margin: 10px;
+}
+.form {
+    width: 50%;
+    margin: auto;
+    margin-bottom: 20px;
+    background-color: black;
+    border: 4px inset silver;
+    color: white;
+}
+
+label, input, textarea, button {
+    display: inline-block;
+    width: 80%;
+    margin: 10px;
+    font-family: sans-serif
+}
+
+.form button {
+    color: black;
+}

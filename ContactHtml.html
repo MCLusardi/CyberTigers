@@ -11,12 +11,26 @@
         <!-- My JavaScirpt File -->
         <script src="jsFinal.js"></script>
         <link rel="stylesheet" href="cssFinal.css">
-        <script>
-            var currentPg = document.getElementById("ContactPg");
-            element.classList.add("active");
-        </script>
+        <!--Google fonts: Righteous-->
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
     </head>
     <body>
         <div id="navigation"></div>
+        <div class="form">
+            <h1 class="title">Questions? Suggestions? Contact Us!</h1>
+            <form action="ContactPHP.php" method="post">
+                <label for="firstName">First Name:</label>
+                <input type="text" id="firstName" name="firstName" placeholder="First Name" required>
+                <label for="lastName">Last Name:</label>
+                <input type="text" id="lastName" name="lastName" placeholder="Last Name" required>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="example@gmail.com" required>
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" style="height:200px"></textarea>
+                <button type="submit" value="Submit">Submit</button>
+            </form>
+            <p id="explainer">We'll get back to you as soon as possible!</p>
+        </div>
     </body>
 </html>
