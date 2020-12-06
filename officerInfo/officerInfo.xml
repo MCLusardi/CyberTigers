@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<officers>
+    <officer>
+        <image>officerInfo/Lincoln.jpg</image>
+        <alt>President</alt>
+        <title>President: Abraham Lincoln</title>
+        <description>"Don't believe everything you see on the internet"</description>
+    </officer>
+    <officer>
+        <image>officerInfo/BatmanRobin.jpg</image>
+        <alt>Vice President</alt>
+        <title>Vice President: Robin</title>
+        <description>Holy Oleo Batman!</description>
+    </officer>
+    <officer>
+        <image>officerInfo/alexander-hamilton.jpg</image>
+        <alt>Treasurer</alt>
+        <title>Treasurer: Alexander Hamilton</title>
+        <description>"There's a million things I haven't done. Just you wait. Just you wait."</description>
+    </officer>
+    <officer>
+        <image>officerInfo/CaptainCrunch.jpg</image>
+        <alt>Communications</alt>
+        <title>Communications: John 'Captain Crunch' Draper</title>
+        <description>A pioneer of phone phreaking, he can get you a call anywhere with nothing but a whistle from Captain Crunch cereal.</description>
+    </officer>
+    <officer>
+        <image>officerInfo/grizzly-bear-spray-scaled.jpg</image>
+        <alt>Outreach</alt>
+        <title>Outreach Coordinator: Grizzly Bear</title>
+        <description>He tries.</description>
+    </officer>
+    <officer>
+        <image>officerInfo/Profile_-_Three_Good_Faries.png</image>
+        <alt>Event Chair</alt>
+        <title>Event Chair: Flora, Fauna, and Merriweather</title>
+        <description>They may not be able to decide if the decorations shoulc be pink or blue, but they do know how to bake a darn good cake.</description>
+    </officer>
+    <officer>
+        <image>officerInfo/Profile_-_Three_Good_Faries.png</image>
+        <alt>Event Chair</alt>
+        <title>Event Chair: Flora, Fauna, and Merriweather</title>
+        <description>They may not be able to decide if the decorations shoulc be pink or blue, but they do know how to bake a darn good cake.</description>
+    </officer>
+    <officer>
+        <image>officerInfo/FerrisBuellerSecretary.jpeg</image>
+        <alt>Secretary</alt>
+        <title>Secretary: Grace Wheelberg</title>
+        <description>“He’s very popular, Ed. The sportos, the motorheads, geeks, sluts, bloods, wastoids, dweebies, dickheads…they all adore him. They think he's a righteous dude."</description>
+    </officer>
+</officers>

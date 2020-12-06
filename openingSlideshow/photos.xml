@@ -1,0 +1,16 @@
+<photos>
+    <photo>
+        <source>"openingSlideshow/firstZoomMtg.png"</source>
+        <alt>First Zoom Meeting</alt>
+    </photo>
+    <photo>
+        <!--https://medium.com/@malcomvetter/ccdc-vs-the-real-world-8e0cf02f02cf-->
+        <source>"openingSlideshow/CCDC.png"</source>
+        <alt>National Collegiate Cyber Defense Competition</alt>
+    </photo>
+    <photo>
+        <!--https://engineering.missouri.edu/ceri-center/-->
+        <source>"openingSlideshow/CERI-Logo.png"</source>
+        <alt>Mizzou Center for Cyber Education, Research, and Infrastructure</alt>
+    </photo>
+</photos>

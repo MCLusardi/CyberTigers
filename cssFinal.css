@@ -14,7 +14,6 @@
 #three{
     width: 20%;
     float:right;
-    
 }
 
 #three li {
@@ -24,6 +23,26 @@
 body {
     padding-top: 80px;
     background-image: url(GeneralAssets/backgroundStatic.gif);
+}
+/* Loader code taken from w3schools*/
+.loader {
+    margin: auto;
+    border: 16px solid #f3f3f3; /* Light grey */
+    border-top: 16px solid #55eb34; /* green */
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    animation: spin 2s linear infinite;
+}
+/* webkit addition for safari */
+@-webkit-keyframes spin {
+    0% { -webkit-transform: rotate(0deg); }
+    100% { -webkit-transform: rotate(360deg); }
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
 }
 
 /* CSS specific for OfficersHtml.html */
