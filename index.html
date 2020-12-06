@@ -10,6 +10,7 @@
         </script>
         <!-- My JavaScirpt File -->
         <script src="jsFinal.js"></script>
+        <script src="homePg.js"></script>
         <link rel="stylesheet" href="cssFinal.css">
         <style>
             #home {
@@ -18,7 +19,39 @@
             }
         </style>
     </head>
-    <body>
+    <body onload="showSlides(1)">
         <div id="navigation"></div>
+        <!-- Slideshow container -->
+        <div class="slideshow-container">
+            <div class="mySlides fade">
+                <div class="numbertext">1 / 3</div>
+                <img src="openingSlideshow/firstZoomMtg.png" style="width:100%">
+                <div class="text">First Zoom Meeting</div>
+            </div>
+
+            <div class="mySlides fade">
+                <div class="numbertext">2 / 3</div>
+                <img src="openingSlideshow/CCDC.png" style="width:100%">
+                <div class="text">National Collegiate Cyber Defense Competition</div>
+            </div>
+
+            <div class="mySlides fade">
+                <div class="numbertext">3 / 3</div>
+                <img src="openingSlideshow/CERI-Logo.png" style="width:100%">
+                <div class="text">Mizzou Center for Cyber Education, Research, and Infrastructure</div>
+            </div>
+
+            <!-- Next and previous buttons -->
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+        <br>
+
+            <!-- The dots/circles -->
+        <div style="text-align:center">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+        </div>
     </body>
 </html>
