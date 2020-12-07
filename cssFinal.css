@@ -29,7 +29,7 @@ body {
 /* Loader code taken from w3schools*/
 .loader {
     margin: auto;
-    border: 16px solid #f3f3f3; /* Light grey */
+    border: 16px solid black; /* Light grey */
     border-top: 16px solid #55eb34; /* green */
     border-radius: 50%;
     width: 120px;
@@ -67,8 +67,13 @@ body {
     height: 100%;
     float: left;
 }
-.text {
+.words {
     width: 50%;
+    display: block;
+    text-align: center;
+    z-index: 2;
+    float: left;
+    padding-left: 10px;
 }
 .PTitle {
     font-family: 'Righteous', cursive;
