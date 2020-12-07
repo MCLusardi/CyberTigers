@@ -1,6 +1,24 @@
 <?php
-
-    create_user();
+    if(!session_start()) {
+		// If the session couldn't start, present an error
+		header("Location: error.php");
+		exit;
+	}
+    // Check to see if the user has already logged in
+	$loggedIn = empty($_SESSION['loggedin']) ? false : $_SESSION['loggedin'];
+	
+    // If already logged in, redirect to profile page
+	if ($loggedIn) {
+		header("Location: profile.html");
+		exit;
+	}
+    $action = empty($_POST['action']) ? '' : $_POST['action'];
+	
+	if ($action == 'do_create') {
+		create_user();
+	} else {
+		login_form();
+	}
 
     function create_user() {
         /* Get info from form to create the user (plus handling if those areas of the form are empty) */
@@ -13,8 +31,9 @@
         $school = empty($_POST['school']) ? '' : $_POST['school'];
         $year = empty($_POST['year']) ? '' : $_POST['year'];
         $email = empty($_POST['email']) ? '' : $_POST['email'];
+/*
 
-/*      //Check that the values were found
+      //Check that the values were found
         
         echo $firstName;
 		echo $lastName;
@@ -27,6 +46,7 @@
 		echo $email;
         exit;
 */
+
         /* Only procede if the password and confirmPass match*/
         if(strcmp($password, $confirmPass) == 0){
             //echo "password confirmed";
@@ -41,7 +61,7 @@
             if ($mysqli->connect_error) {
                 //echo "connection error";
                 $error = 'Error: ' . $mysqli->connect_errno . ' ' . $mysqli->connect_error;
-                require "login_form.php";
+                require "loginFormFinal.html";
                 exit;                           
             }
 
@@ -50,11 +70,13 @@
             $lastName = $mysqli->real_escape_string($lastName);
             $username = $mysqli->real_escape_string($username);
             $password = $mysqli->real_escape_string($password);
-            $birthday = $mysqli->real_escape_string($birthday);
+            $major = $mysqli->real_escape_string($major);
+            $school = $mysqli->real_escape_string($school);
+            $year = $mysqli->real_escape_string($year);
             $email = $mysqli->real_escape_string($email);
 
             // Build query
-            $query = "INSERT INTO users (firstName, lastName, username, userPassword, email, birthday) VALUES ('$firstName', '$lastName', '$username', sha1('$password'), '$email', STR_TO_DATE('$birthday', '%Y-%m-%d'))";
+            $query = "INSERT INTO CyberTigerMembers (firstName, lastName, username, userPassword, major, school, year_in_school, email) VALUES ('$firstName', '$lastName', '$username', sha1('$password'), '$major', '$school', '$year', '$email')";
 
             // Sometimes it's nice to print the query. That way you know what SQL you're working with.
             //print $query;
@@ -67,24 +89,32 @@
             if ($mysqliResult === TRUE) {
                 echo "user created successfully";
                 $error = 'New User Created Successfully';
-                require "login_form.php";
+                require "loginFormFinal.html";
                 //exit;
             }
             // Else, there was no result
             else {
                 //echo $query;
                 $error = 'Insert Error: ' . $query . '<br>' . $mysqli_error;
-                require "createUser_form.php";
+                require "createUserFormFinal.php";
                 //exit;
             }
            
             $mysqli->close();
-            exit;*/
+            exit;
         }
         else {
             echo "Error: Passwords do not match!";
-            /*require "createUser_form.php";*/
+            require "createUserFormFinal.php";
             exit;
         }
     }
+
+    //function to take user to login form if user is already created
+    function login_form() {
+		$username = "";
+		$error = "";
+		require "loginFormFinal.html";
+        exit;
+	}
 ?>

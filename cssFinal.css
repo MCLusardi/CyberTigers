@@ -19,7 +19,9 @@
 #three li {
     float: right;
 }
-
+.navbarlinks {
+    font-family: 'Righteous', cursive;
+}
 body {
     padding-top: 80px;
     /*background-image: url(GeneralAssets/backgroundStatic.gif);*/
@@ -104,14 +106,14 @@ body {
     color: white;
 }
 
-label, input, textarea, button {
+select, label, input, textarea, button {
     display: inline-block;
     width: 80%;
     margin: 10px;
     font-family: sans-serif
 }
 
-.form button {
+.form button, .form select, .form input {
     color: black;
 }
 
@@ -215,3 +217,4 @@ label, input, textarea, button {
   from {opacity: .4}
   to {opacity: 1}
 }
+
