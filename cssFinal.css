@@ -23,7 +23,7 @@
     font-family: 'Righteous', cursive;
 }
 body {
-    padding-top: 80px;
+    padding-top: 68px;
     /*background-image: url(GeneralAssets/backgroundStatic.gif);*/
 }
 /* Loader code taken from w3schools*/
@@ -124,15 +124,16 @@ select, label, input, textarea, button {
 
 /* CSS for index.html */
 /* This CSS is for the photo viewer and is from w3schools*/
-* {box-sizing:border-box}
+/** {box-sizing:border-box}*/
 
 /* Slideshow container */
 .slideshow-container {
-    max-width: 1000px;
     position: relative;
     margin: auto;
     background-color: black;
     width: 100%;
+    height: 750px;
+    margin-bottom: 0px;
 }
 
 /* Hide the images by default */
@@ -199,6 +200,13 @@ select, label, input, textarea, button {
   transition: background-color 0.6s ease;
 }
 
+#dotContainer {
+    text-align: center;
+    background-color: black;
+    margin-top: 0px;
+    padding: 5px;
+}
+
 .active, .dot:hover {
   background-color: #717171;
 }
@@ -223,3 +231,19 @@ select, label, input, textarea, button {
   to {opacity: 1}
 }
 
+#homePgInfo {
+    border-bottom: 4px inset silver;
+    border-top: 4px inset silver;
+    width: 100%;
+    padding: 20px;
+    background-color: black;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+#homePgInfo p {
+    margin: auto;
+    color: white;
+}
+#homePgInfo .title {
+    color: white;
+}
